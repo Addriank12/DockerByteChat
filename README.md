@@ -19,11 +19,11 @@ ByteChat es una aplicación de chat en tiempo real con un estilo retro inspirado
      docker run -p 80:80 -p 3000:3000 addriank12/byte-chat
 
 
-3. Abre tu navegador web y accede a http://localhost.
+3. Abre tu navegador web y accede a http://localhost:80.
 
 ### Acceso y Prueba de la Funcionalidad del Chat
 
-1. Abre http://localhost en tu navegador web.
+1. Abre http://localhost:80 en tu navegador web.
 2. Ingresa tu nombre de usuario.
 3. Envía mensajes en el chat y observa cómo aparecen en tiempo real.
 4. Coloca el mouse sobre un mensaje para ver la fecha y hora en que fue enviado.
