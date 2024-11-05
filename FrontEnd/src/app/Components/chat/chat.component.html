@@ -1,0 +1,21 @@
+<div class="chat-container" [class.overlay]="!hasEnteredName">
+  <div class="messages" id="messages">
+    <div *ngFor="let message of messages" class="message">
+      <p class="author">{{ message.author }}:</p>
+      <p class="text">{{ message.message }}</p>
+      <span class="timestamp">{{ message.date | date : "short" }}</span>
+    </div>
+  </div>
+  <div class="input-container">
+    <input
+      type="text"
+      [(ngModel)]="message"
+      id="message"
+      [placeholder]="
+        hasEnteredName ? '> Escribe tu mensaje...' : '> Escribe tu nombre...'
+      "
+      (keydown.enter)="sendMessage()"
+    />
+    <button id="sendButton" (click)="sendMessage()">Enviar</button>
+  </div>
+</div>
