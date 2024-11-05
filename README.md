@@ -1,32 +1,29 @@
-# ByteChat
+# ByteChat Frontend
 
-ByteChat es una aplicación de chat en tiempo real con un estilo retro inspirado en una consola de Kali Linux. Los usuarios pueden ingresar su nombre, enviar mensajes y ver mensajes enviados por otros usuarios en tiempo real. Colocar el mouse sobre un mensaje muestra la fecha y hora en que fue enviado.
+En este proyecto, el frontend de la aplicación ByteChat cuenta diseño retro que simula una consola de Kali Linux. La aplicación está construida con Angular en VS, por otra parte el BackEnd es el encargado de gestionar la comunicación en tiempo real entre los clientes mediante WebSockets. La aplicación está construida con Node.js y Socket.io.
 
-## Uso
+## Características
 
-### Requisitos
-
-- Docker instalado en tu sistema.
-
-### Descargar y Ejecutar la Imagen
-
-1. Descarga la imagen desde Docker Hub:
-
-      docker pull addriank12/byte-chat
-
-2. Ejecuta el contenedor Docker:
-
-     docker run -p 80:80 -p 3000:3000 addriank12/byte-chat
+- **Diseño Retro**: Interfaz de usuario que simula una consola de Kali Linux.
+- **Ingreso de Usuario**: Los usuarios deben ingresar su nombre antes de acceder al chat.
+- **Mensajes en Tiempo Real**: Los usuarios pueden enviar y recibir mensajes en tiempo real.
+- **Información de Tiempos**: Al colocar el cursor sobre un mensaje, se muestra la hora y la fecha en que fue enviado.
+- **Comunicación en Tiempo Real**: Utiliza Socket.io para manejar la comunicación en tiempo real entre los clientes.
+- **Mensajes en Tiempo Real**: Los usuarios pueden enviar y recibir mensajes instantáneamente.
+- **Registro de Conexiones y Desconexiones**: Registra cuándo los usuarios se conectan y desconectan.
 
 
-3. Abre tu navegador web y accede a http://localhost.
+## Requisitos
 
-### Acceso y Prueba de la Funcionalidad del Chat
+- Node.js y npm
+- Angular CLI
+- Docker
 
-1. Abre http://localhost en tu navegador web.
-2. Ingresa tu nombre de usuario.
-3. Envía mensajes en el chat y observa cómo aparecen en tiempo real.
-4. Coloca el mouse sobre un mensaje para ver la fecha y hora en que fue enviado.
+## Instalación
+
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/Addriank12/DockerByteChat.git
 
 
 mkt & addriank12 ®
